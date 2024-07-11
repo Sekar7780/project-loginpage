@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./selectors_challenge.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="./travelform-background.png" alt="image">
+    </div>
+    <div class="overall">
+        <div class="head">
+            <h1>Tour Booking Form</h1>
+            <h3>Note: <sup>*</sup>Mandatory Fields</h3>
+        </div>
+        <form action="">
+        <label for="name"><strong>Full Name <sup>*</sup>:</strong></label>
+        <br>
+        <input class="tag" type="text" name="name" id="name" required/>
+        <br>
+        <label for="email"><strong>Email Address <sup>*</sup>:</strong></label>
+        <br>
+        <input class="tag" type="email" name="email" id="name" required/>
+        <br>
+        <label><strong>Select Tour Package <sup>*</sup>:</strong></label>
+        <br>
+        <select class="pack" name="Package" required>
+            <option value="select">Select Package</option>
+            <option value="south india">South India</option>
+            <option value="North india">North India</option>
+            <option value="west india">West India</option>
+            <option value="east india">East India</option>
+        </select>
+        <br>
+        <label for="Arrival date"><strong>Date<sup>*</sup>:</strong></label>
+        <br>
+        <input class="tag" type="date" id="Arrival" name="Arrival" required>
+        <br>
+        <label for="persons"><strong>Number of Persons <sup>*</sup>:</strong></label>
+        <br>
+        <input class="tag" type="number" id="count" name="count" required>
+        <br>
+        <label for="avail"><strong>What would you want to avail?<sup>*</sup></strong></label>
+        <br>
+        <div class="gap">
+            <input type="checkbox" id="Boarding" name="avail" value="Boarding"required/>
+            <label for="Boarding">Boarding</label>
+            <br>
+            <input type="checkbox" id="Food" name="avail" value="Food"/>
+            <label for="Food">Food</label>
+            <br>
+            <input type="checkbox" id="Sight seeing" name="avail" value="Sight seeing"/>
+            <label for="Sight seeing">Sight seeing</label>
+            <br>
+        </div>
+        <label for="terms and condition"><strong>Terms and Conditions <sup>*</sup></strong></label>
+        <br>
+        <div class="gap">
+        <input class="radio" type="radio" id="I agree" name="terms and condition" value="I agree" required/>
+        <label for="I agree">I Agree</label>
+        <br>
+        </div>
+        <div class="button">
+            <button  type="submit" id="submit">Book Now</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
